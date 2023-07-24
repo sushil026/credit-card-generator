@@ -3,7 +3,7 @@
    margin: 0;
 }
 #screen{
-   background-image: url(./Component/images/Group\ 2.png);
+   background-image: url(./Component/images/backgroundImg.png);
    position: absolute;
    background-size: 100% 110%;
    left: -7px;
