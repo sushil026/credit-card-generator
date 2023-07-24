@@ -1,18 +1,22 @@
 form{
    height: fit-content;
    width: 420px;
+   position: absolute;
+   top: 24vh;
+   left: 60vw;
 }
 label{
    color: red;
    font-family: 'Inter', sans-serif;
    font-size: 15px;
 }
-p{
+h2{
+   padding-bottom: 10px;
    font-size: 15px;
    letter-spacing: 2px;
    margin: 0;
    font-family: 'Roboto', sans-serif;
-   color: #514a4a;
+   color: #404040;
 }
 #name input , #cardNumber input{
    font-family: 'Inter', sans-serif;
@@ -40,7 +44,7 @@ p{
    border-radius: 5px;
 }
 #name, #cardNumber, #second, button{
-   margin-top: 10px;
+   margin-top: 2vh;
 }
 #second{
    width: 410px;
@@ -58,4 +62,14 @@ button{
    border: none;
    border-radius: 5px;
    cursor: pointer;
+}
+input:focus{
+   top: -3px;
+   left: 3px;
+   box-shadow: rgba(171, 173, 182, 0) -2px 2px, rgba(158, 164, 170, 0.847) -5px 5px, rgba(114, 115, 117, 0.2) -10px 10px;
+}
+button:hover{
+   top: -3px;
+   left: 3px;
+   box-shadow: rgba(171, 173, 182, 0) -2px 2px, rgba(158, 164, 170, 0.847) -5px 5px, rgba(114, 115, 117, 0.2) -8px 8px;
 }

@@ -29,14 +29,14 @@ export default function Form() {
     return (
     <form>
       <div id="name">
-        <p>CARDHOLDER NAME</p>
+        <h2>CARDHOLDER NAME</h2>
         <input className="input1" type="text" placeholder="e.g. Jane Appleseed" onChange={e=>setName(e.target.value)}/>
         <br />
         {error && name.length<=0 ?
         <label>Cardholder name is required</label>:""}
       </div>
       <div id="cardNumber">
-        <p>CARD NUMBER</p>
+        <h2>CARD NUMBER</h2>
         <input className="input1" type="text" placeholder="e.g. 1234 5678 9000 0000" onChange={e=>setNumber(e.target.value)}/>
         <br />
         {error && (number.length!==16 ) ?
@@ -44,7 +44,7 @@ export default function Form() {
       </div>
       <div id="second">
         <div id="exp">
-          <p>EXP. DATE</p>
+          <h2>EXP. DATE</h2>
           <input type="text" className="input2" id="month" placeholder="MM" onChange={e=>setMonth(e.target.value)}/>
           <input type="text" className="input2" id="year" placeholder="YY" onChange={e=>setYear(e.target.value)}/>
           <br/>
@@ -52,7 +52,7 @@ export default function Form() {
           <label>Input valid Date</label>:""}
         </div>
         <div id="cvc">
-          <p>CVC</p>
+          <h2>CVC</h2>
           <input type="text" id="input3" placeholder="e.g. 123" onChange={e=>setCVC(e.target.value)}/>
           <br />
           {error && (cvc.length!==3 || Number.isInteger(cvc)) ?
