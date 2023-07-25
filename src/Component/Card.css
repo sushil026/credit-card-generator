@@ -13,6 +13,7 @@
    height: 35vh;
    width: 33vw;
    border-radius: 15px;
+   transition: 0.2s;
 }
 #front{
    background-image: url(./images/cardImg.png);
@@ -75,8 +76,8 @@ h1{
 }
 
 #front:hover{
-   top: -2vh;
-   left: 2vw;
+   top: -1vh;
+   left: 1vw;
    box-shadow: rgba(118, 2, 251, 0.4) -5px 5px, rgba(113, 102, 192, 0.847) -10px 10px, rgba(138, 143, 249, 0.2)-15px 15px;
 }
 #rear:hover{
