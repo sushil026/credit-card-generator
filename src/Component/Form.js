@@ -27,11 +27,6 @@ export default function Form(props) {
       setError(true);
     }
   }
-  // if (!error) {
-  //   // console.log(error);
-  //   let data = [name, number, month, year, cvc];
-  //   props.onSubmit(data);
-  // }
   return (
     <form>
       <div id="name">
